@@ -1,0 +1,13 @@
+SELECT COUNT(*) AS total_races
+FROM races
+JOIN circuits
+ON races.circuitId = circuits.circuitId
+WHERE circuits.name = 'Silverstone Circuit';
+
+SELECT forename, results.position from results
+join drivers on results.driverId = drivers.driverId
+join races on results.raceId = races.raceId
+JOIN circuits
+  ON races.circuitId = circuits.circuitId
+WHERE races.year = 2016
+  AND circuits.name = 'Yas Marina Circuit';

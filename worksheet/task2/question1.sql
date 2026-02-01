@@ -4,4 +4,4 @@
 
 SELECT StudentId,FirstName, LastName, EnrolmentYear 
 FROM student
- WHERE EnrolmentYear = 2022;
+WHERE EnrolmentYear = 2022;

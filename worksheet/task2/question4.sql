@@ -2,7 +2,7 @@
 -- Expected Columns:
 -- StudentId, FirstName, LastName, CourseName
 
-SELECT Student.StudentId, Student.FirstName, Student.LastName, Course.CourseName 
+SELECT Student.StudentId, FirstName, LastName, CourseName 
 FROM Student 
 JOIN Enrolment ON Student.StudentId = Enrolment.StudentId 
 JOIN Course ON Enrolment.CourseId = Course.CourseId;
